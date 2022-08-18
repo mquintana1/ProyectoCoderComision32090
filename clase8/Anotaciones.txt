@@ -1,0 +1,5 @@
+Para dar de alta un proyecto completo con las rutas ya creadas
+
+npm i express-generator -g
+
+Permite generar las carpetas a utilizar con sus distintos puntosa modificar.

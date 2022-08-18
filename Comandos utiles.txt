@@ -1,0 +1,12 @@
+Comandos del curso para levantar una API en express
+
+Ubicado en carpeta a correr la API
+
+//Este comando levanta toda la estructura de la API con sus diferentes capas y ubicaciones
+express --view=ejs 
+
+//Este comando sirve para instalar las dependencias de los modulos de node
+npm i
+
+//Este comando sirve para ejecutar la aplicacion en vivo y verificar errores o debuguear
+nodemon
