@@ -116,9 +116,9 @@ class Contenedor {
         await this.writeFile(carts);
         return true;
       } else if (!cart) {
-        return 'Ups! No encontramos el carrito que buscas...';
+        return 'Lo sentimos! No encontramos el carrito que buscas.';
       } else if (!productToAdd) {
-        return 'Ups! No existe ese producto...';
+        return 'Lo sentimos! No existe ese producto.';
       }
     } catch (error) {
       console.error(error);
@@ -138,7 +138,7 @@ class Contenedor {
     try {
       const carts = await this.getAll();
       const cart = await this.getById(id)
-      if(!cart) return `Ups! No encontramos el carrito que buscas...`
+      if(!cart) return `Lo sentimos! No encontramos el carrito que buscas.`
       const productIndex = cart.productos.findIndex(prod=> prod.id == idProduct)
       const cartIndex = carts.findIndex(cart=> cart.id == id)
       if (productIndex > -1) {
@@ -146,7 +146,7 @@ class Contenedor {
         await this.writeFile(carts);
         return true;
       } else if(productIndex == -1){
-        return `Ups! No encontramos ese producto en tu carrito`
+        return `Lo sentimos! No encontramos ese producto en tu carrito`
       }
     } catch (error) {
       console.error(error)
@@ -156,7 +156,7 @@ class Contenedor {
     try {
       const carts = await this.getAll()
       const cart = await this.getById(id)
-      if(!cart)return `Ups! No encontramos el carrito! ='(`
+      if(!cart)return `Lo sentimos! No encontramos el carrito.`
       const index = carts.findIndex(cart=>cart.id == id)
       carts[index].productos = []
       await this.writeFile(carts)

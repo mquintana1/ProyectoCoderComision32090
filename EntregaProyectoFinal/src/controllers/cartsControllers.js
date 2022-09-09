@@ -1,5 +1,6 @@
-import { carts } from "../../../containers/containers.js";
+import { carts } from "../../src/containers/containers.js";
 
+// Borrado de carrito completo
 const deleteCart = async(req, res)=>{
     const ID = req.params.id
     try {
@@ -10,7 +11,8 @@ const deleteCart = async(req, res)=>{
     }
   }
 
-  const deleteProductfromCart = async (req, res) => {
+  // Sirve para borrar 1 producto del carrito
+  const deleteProductFromCart = async (req, res) => {
     const ID = req.params.id;
     const ID_PRODUCT = req.params.id_prod
     try {
@@ -21,6 +23,7 @@ const deleteCart = async(req, res)=>{
     }
   }
 
+  // Obtiene los datos de un carrito de compras
   const getCartProducts = async (req, res) => {
     const ID = req.params.id;
     try {
@@ -31,11 +34,13 @@ const deleteCart = async(req, res)=>{
     }
   }
 
+  //crea un nuevo carrito de compras
 const postNewCart = async (req, res) => {
 const newCart = await carts.addNewCart();
     res.json(`Carrito creado exitosamente con id: ${newCart}`);
   }
 
+  // Añade un producto nuevo al carrito de compras
   const postProductToCart = async (req, res) => {
     const ID = req.params.id;
     const ID_PRODUCT = req.body.id_prod;
@@ -46,5 +51,4 @@ const newCart = await carts.addNewCart();
     }
   };
   
-  export { deleteProductfromCart, deleteCart, postNewCart, postProductToCart, getCartProducts };
-  
+  export { deleteProductFromCart, deleteCart, postNewCart, postProductToCart, getCartProducts }
