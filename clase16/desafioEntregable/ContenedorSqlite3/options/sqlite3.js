@@ -3,6 +3,7 @@ const options = {
     connection: {
       filename: "./sqlite3",
     },
+    useNullAsDefault: true
   };
   
   module.exports = options;
