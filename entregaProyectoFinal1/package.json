@@ -1,18 +1,17 @@
 {
   "type": "module",
-  "name": "entregaproyectofinal1",
+  "name": "entregaproyectofinal",
+  "description": "Primera entrega proyecto final",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ."
   },
   "keywords": [],
-  "author": "",
+  "author": "Marcelo Quintana",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1",
-    "nodemon": "^2.0.19"
-  }
+    "express": "^4.18.1"
+  },
+  "devDependencies": {}
 }

@@ -1,5 +1,5 @@
-import { products } from "../../src/containers/containers.js";
-import isAdmin from "../../src/controllers/isAdmin/index.js";
+import { products } from "../containers/containers.js";
+import isAdmin from "./isAdmin/index.js";
 
 //Sirve para borrar de producto
 const del = async (req, res) => {
