@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "entregaproyectofinal",
+  "description": "Segunda entrega proyecto final",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node .",
+    "startMongo": "node server.js mongodb",
+    "startFirebase": "node server.js firebase"
+  },
+  "keywords": [],
+  "author": "Marcelo Quintana",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "firebase-admin": "^11.0.1",
+    "mongodb": "^4.10.0",
+    "mongoose": "^6.6.2"
+  }
+}
