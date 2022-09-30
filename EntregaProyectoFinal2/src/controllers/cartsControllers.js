@@ -1,4 +1,4 @@
-import {carritosDao} from '../../daos/carritos/index.js'
+import {carritosDao} from '../../src/daos/carritos/index.js'
 
 // Borrado de carrito completo
 const deleteCart = async(req, res)=>{

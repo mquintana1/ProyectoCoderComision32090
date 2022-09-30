@@ -1,5 +1,5 @@
-import { productosDao } from '../../daos/productos/index.js';
-import config  from '../../../config.js'
+import { productosDao } from '../../src/daos/productos/index.js';
+import config  from '../../config.js'
 
 //Sirve para borrar de producto
 const del = async (req, res) => {

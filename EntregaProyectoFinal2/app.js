@@ -15,3 +15,5 @@ app.get('/', (req, res)=>{
 app.all('*', (req, res) => {
   res.json({error: `404 Not Found`, desc: `Lo sentimos! No encontramos resultados para tu busqueda`})
 })
+
+export default app
