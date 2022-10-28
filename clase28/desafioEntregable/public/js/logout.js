@@ -1,0 +1,1 @@
+setTimeout(()=> window.location.assign('/auth/login'), 2000)
