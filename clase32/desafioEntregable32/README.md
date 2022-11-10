@@ -60,7 +60,7 @@ Running 20s test @ http://localhost:3030/test/info
 └───────────┴────────┴────────┴────────┴────────┴──────────┴─────────┴────────┘
 
 Req/Bytes counts sampled once per second.
-# of samples: 20
+### of samples: 20
 
 12k requests in 20.07s, 6.88 MB read
 El resultado de Artillery nos indica (ver archivo para resultados completos)
@@ -68,9 +68,13 @@ El resultado de Artillery nos indica (ver archivo para resultados completos)
 http.response_time:
 
 min: ......................................................................... 4 (OK)
+
 max: ......................................................................... 393 (OK)
+
 median: ...................................................................... 141.2 (OK) 
+
 p95: ......................................................................... 210.6 (OK)
+
 p99: ......................................................................... 308 (OK)
 
 Benchmark con console Log
