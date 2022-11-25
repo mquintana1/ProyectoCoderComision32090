@@ -1,0 +1,59 @@
+<h1 class="title">Contacto</h1>
+
+<form>
+    <div class="columns">
+        <div class="column">
+            <div class="field">
+                <label class="label" for="emailChat">Nombre</label>
+                <div class="control">
+                    <input class="input" name="email" id="firstNameChat" value="{{this.first_name}}" required>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="field">
+                <label class="label" for="emailChat">Apellido</label>
+                <div class="control">
+                    <input class="input" name="email" id="lastNameChat" value="{{this.last_name}}" required>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns">
+        <div class="column">
+            <div class="field">
+                <label class="label" for="emailChat">Email</label>
+                <div class="control">
+                    <input class="input" name="email" id="emailChat" type="email" value="{{this.email}}" required>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="field">
+                <label class="label" for="emailChat">Edad</label>
+                <div class="control">
+                    <input class="input" name="email" id="ageChat" type="number" min="18" value="{{this.age}}" required>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <div class="field">
+            <label class="label" for="messageChat">Mensaje</label>
+            <div class="control">
+                <input class="input" name="message" id="messageChat">
+            </div>
+        </div>
+    </div>
+    <input class="button is-primary" type="submit" name="enviar" value="Enviar" id="chatButton">
+</form>
+
+<br />
+<h3 class="title">Lista de mensajes</h3>
+<div id="chatBox"></div>
+
+
+<!--SCRIPTS-->
+<script type="text/javascript" src="../js/contact.js"></script>
