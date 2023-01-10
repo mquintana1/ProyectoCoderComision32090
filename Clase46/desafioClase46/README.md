@@ -71,3 +71,8 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+
+## Comentarios 
+
+Realizamos una aplicación backend utilizamos el framework Nest, donde dispondremos de un recurso llamado autos, que me permita por ruta get listar los autos almacenados. Disponemos de una ruta post para agregar un auto con su marca, modelo y año. Incorporamos varios autos a través de postman y verificar que ellos estén cargados.
